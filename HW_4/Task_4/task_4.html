@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes blockAnimation {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+                transform: translateY(200px);
+            }
+
+            50% {
+                background-color: green;
+                transform: translate(300px, 200px);
+            }
+
+            75% {
+                background-color: yellow;
+                transform: translateX(300px);
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        div {
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation-name: blockAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

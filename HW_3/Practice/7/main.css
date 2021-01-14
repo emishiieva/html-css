@@ -1,0 +1,32 @@
+.container {
+    margin: 0 auto;
+    width: 300px;
+    border: 3px solid darkblue;
+    color: green;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.container:after { 
+    content: " ";     
+    display: table;    
+    clear: both;      
+}
+
+.first {
+    width: 63%;
+    background: darkblue;
+    display: block;
+    float: left;
+}
+
+.first span:last-child {
+    float: right;
+}
+
+.second {
+    float: left;
+    width: 37%;
+    text-align: right;
+}

@@ -1,0 +1,48 @@
+body {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1920px) {
+    h1 {
+        font-family: "TimesNewRoman";
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .fig {    
+        text-align: center;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .main {
+        margin-left: 15%;
+        font-family: "Courier";
+        font-weight: bold;
+    }
+
+    body > p:last-child {
+        margin-left: 15%;
+        font-family: "TimesNewRoman";
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        margin: 5px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    p {
+        margin: 2px 0;
+    }
+
+   p, div {
+       font-size: 18px;
+   }
+}

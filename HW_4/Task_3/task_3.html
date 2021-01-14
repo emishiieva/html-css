@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: absolute;
+            background-color: lightslategray;
+            width: 300px;
+            height: 600px;
+            transition: 0.7s;
+            transform: translateX(-80%);
+        }
+
+        .menu {
+            width: 300px;
+            height: 600px;
+            background-color: lightslategray;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .sideBar {
+            box-sizing: border-box;
+            padding: 10px;
+            width: 50px;
+            height: 600px;
+            background-color: lightslategray;
+            color: white;
+            writing-mode: tb-rl;
+            font-size: 25px;
+            letter-spacing: 4px;
+            vertical-align: middle;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            left: 250px;
+        }
+
+        .container:hover {
+            transform: translateX(0%);
+        }
+
+        .menu:hover {
+            z-index: 3;
+        }
+
+        ul {
+
+            margin: 50px auto;
+            font-size: 16px;
+            line-height: 2;
+            list-style: none;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        li:before {
+            background-image: url("block.png");
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            content: "";
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTACTS</a></li>
+                <li><a href="">OUR TEAM</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">NEWS</a></li>
+            </ul>
+        </div>
+        <div class="sideBar">MENU HERE</div>
+    </div>
+</body>
+
+</html>

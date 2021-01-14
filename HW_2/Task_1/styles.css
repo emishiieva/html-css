@@ -1,0 +1,17 @@
+blockquote {
+    margin: 0;    
+}
+
+blockquote p {
+    padding: 15px;    
+    border-radius: 5px;
+    background: blue;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}

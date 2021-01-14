@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Блочная верстка</title>
+    <style>
+        #banner {
+            background-color: #eee;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #leftSidebar {
+            background-color: #ddd;
+            float: left;
+            height: 700px;
+            width: 32%;
+            text-indent: 30px;
+            font-size: 14px;
+            font-family: sans-serif;
+            word-spacing: 20px;
+            word-wrap: none;
+            text-align: justify;
+            background-color: #729FCF;
+            padding: 5pt;
+        }
+
+        #rightSidebar {
+            float: right;
+            height: 700px;
+            width: 32%;
+        }
+
+        #main {
+            background-color: #eee;
+            margin-right: auto;
+            margin-left: auto;
+            height: 700px;
+            width: 32%;
+            background-color: green;
+        }
+
+        #main ul li span {
+            color: yellow;
+        }
+
+
+        img {
+            position: relative;
+            height: 25%;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .logo {
+            background-image: url(logo.png);
+            background-position: top left;
+            background-size: 8%;
+            background-repeat: no-repeat;
+            height: 30%;
+        }
+
+        .logo2 {
+            font-size: 48px;
+            font-style: FreeMono;
+            margin-left: 15%;
+        }
+
+        .logo3 {
+            font-size: 26px;
+            font-style: FreeMono;
+            margin-bottom: 0px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <div class="logo"></div>
+        <div class="logo2">A-LeVeL</div>
+        <div class="logo3"><span style="background-color: green;">CSS</span> це <span
+                style="background-color: rgb(97, 97, 14);">ķřутÖ</span> </div>
+    </div>
+    <div id="leftSidebar"><span style="font-weight: bold;">Каскадные таблицы стилей (CSS)</span> используются для
+        описания внешнего вида документа, написанного языком разметки. CSS привносит <span
+            style="font-weight: bold;">жизнь</span> в HTML-документ, выбирая шрифты, применяя цвета, определяя отступы,
+        позиционируя элементы, анимируя взаимодействия и многое другое.<span style="font-weight: bold;"> Объявление
+            стиля состоит из двух частей:</span> элемента веб-страницы — <span style="font-style: italic;">
+            селектора</span>, и команды форматирования — <span style="font-style: italic;">блока объявления.</span>
+    </div>
+    <div id="rightSidebar">
+        <p style="text-align: left;">
+            <span style="font-style: italic;">Примеры селекторов:</span>
+            <ul>
+                <li> * {}</li>
+                <li> p.class {}</li>
+                <li> *.class {}</li>
+                <li> .class {}</li>
+                <li> span {}</li>
+                <li> div#id</li>
+                <li> span#id</li>
+                <li> article#id {}</li>
+            </ul>
+        </p>
+    </div>
+    <div id="main">
+        <p>
+            <span style="font-weight: bold;">Селекторы CSS:</span>
+            <ul>
+                <li> <span>универсальными;</span></li>
+                <li><span>електором элемента;</span></li>
+                <li><span>классовый селектор;</span></li>
+                <li><span>селектор ID.</span></li>
+            </ul>
+        </p>
+    </div>
+</body>
+
+</html>

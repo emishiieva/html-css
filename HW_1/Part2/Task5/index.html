@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Task 5</title>
+</head>
+
+<body>
+    <form action="action.php" enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Application form</legend>
+            <table>
+                <tr>
+                    <td colspan="2"><label for="name">Full Name</label></td>
+                    <td colspan="4"><input type="text" id="name" style="width: 200px;"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="email">Email</label></td>
+                    <td colspan="4"><input type="text" id="email" name="email" style="width: 200px;"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="gender">Gender</label></td>
+                    <td><input type="radio" name="gender" value="male"> Male</td>
+                    <td><input type="radio" name="gender" value="female"> Female</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="nationality">Nationality</label></td>
+                    <td colspan="4">
+                        <select id="nationality" name="nationality">
+                            <option value="ukrainian">Ukrainian</option>
+                            <option value="russian">Russian</option>
+                            <option value="british 5x">British</option>
+                            <option value="american">American</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2"><label for="skills">Skills</label></td>
+                    <td><input type="checkbox" name="skills" />AspNet</td>
+                    <td><input type="checkbox" name="skills" />jQuery</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="skills" />MVC</td>
+                    <td><input type="checkbox" name="skills" />Sql Server</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2"><label for="post">Post applying<br> for</label></td>
+                    <td><input type="radio" name="post" value="trainee"/>trainee</td>
+                    <td><input type="radio" name="post" value="softwearEngineer" />Softwear Engineer</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="post" value="teamLeader"/>Team Leader</td>
+                    <td><input type="radio" name="post" value="projectManager"/>Project Manager</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2"><label for="resume">Upload<br> Resume:</label></td>                    
+                </tr>
+                <tr>
+                    <td> <input type="file" name="resume" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="paste">Paste your<br> Resume:</label></td>
+                    <td colspan="4"> <textarea name="paste" style="width: 400px;"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="checkbox" name="notify"/>Notify me the status via Email</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="radio" name="terms" value="terms"/>I agree to terms & conditions</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right"><button type="submit">Submit</button></td>
+                    <td colspan="4"><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

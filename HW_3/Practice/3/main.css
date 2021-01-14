@@ -1,0 +1,25 @@
+#container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+li {
+    float: left;
+    margin: 5px;
+}
+
+li:nth-child(2) {
+    clear: left;
+}
+
+p:after { 
+    content: " ";     
+    display: table;    
+    clear: both;      
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes ballAnimation {
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            30% {
+                left: 30px;
+                bottom: 0;
+            }
+
+            50% {
+                left: 55px;
+                bottom: 70px;
+            }
+
+            60% {
+                left: 75px;
+                bottom: 0;
+            }
+
+            70% {
+                left: 95px;
+                bottom: 45px;
+            }
+
+            80% {
+                left: 110px;
+                bottom: 0;
+            }
+
+            90% {
+                left: 130px;
+                bottom: 20px;
+            }
+
+            100% {
+                left: 140px;
+                bottom: 0px;
+            }
+        }
+
+        div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: brown;
+            position: absolute;
+
+            animation-name: ballAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+    </style>
+    <title>7</title>
+</head>
+
+<body>
+    <div>
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

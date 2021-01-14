@@ -1,0 +1,10 @@
+.card img {
+width: 100px;
+height: 100px;
+margin: 10px auto;
+}
+
+.my-logo {
+    width: 100px;
+    height: auto;
+}

@@ -1,0 +1,161 @@
+.container_1 {
+    width: 640px;
+    margin: 0 auto;
+    height: 640px;
+    position: relative;
+}
+
+div {
+    width: 200px;
+    height: 200px;    
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.container_1 .red {
+    border: 1px solid red;  
+    margin: 10px;  
+}
+
+.container_1 .blue {
+    border: 1px solid blue;
+    left: 220px;
+    top: 220px;
+    
+}
+
+.container_1 .green {
+    border: 1px solid green;
+    left: 430px;
+    top: 430px;
+}
+
+.container_2 {
+    width: 640px;
+    margin: 50px auto;
+    height: 220px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container_2 div {
+    margin: 10px;
+}
+
+.container_2 .red {
+    border: 1px solid red;    
+}
+
+.container_2 .blue {
+    border: 1px solid blue;
+    left: 210px;
+}
+
+.container_2 .green {
+    border: 1px solid green;
+    left: 420px;
+}
+
+.container_3 {
+    width: 450px;
+    margin: 50px auto;
+    height: 450px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container_3 .red {
+    border: 1px solid red;    
+}
+
+.container_3 .blue {
+    border: 1px solid blue;
+    left: 125px;
+    top: 125px;
+}
+
+.container_3 .green {
+    border: 1px solid green;
+    left: 250px;
+    top: 250px;
+}
+
+.container_4 {
+    width: 450px;
+    margin: 50px auto;
+    height: 450px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container_4 .red {   
+    background: red;
+}
+
+.container_4 .blue {
+    background: blue;
+    left: 125px;
+    top: 125px;
+}
+
+.container_4 .green {
+    background: green;
+    left: 250px;
+    top: 250px;
+}
+
+.container_5 {
+    width: 450px;
+    margin: 50px auto;
+    height: 450px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container_5 .red {   
+    background: red;
+}
+
+.container_5 .blue {
+    background: blue;
+    left: 125px;
+    top: 125px;
+    z-index: 100;
+}
+
+.container_5 .green {
+    background: green;
+    left: 250px;
+    top: 250px;
+}
+
+.traffic_light {
+    width: 400px;
+    margin: 50px auto;
+    height: 820px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 100px;
+}
+
+.traffic_light div {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.traffic_light .red {   
+    background: red;
+}
+
+.traffic_light .yellow {
+    background: yellow;
+    left: 100px;
+    top: 310px;
+}
+
+.traffic_light .green {
+    background: green;
+    left: 100px;
+    top: 520px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        section div:nth-child(odd) {
+            background-color: black;
+        }
+
+        section div:nth-child(even) {
+            background-color: darkblue;
+        }
+
+        section div:hover {
+            background-color: brown;
+        }
+
+        section div {
+            float: left;
+        }
+
+        section:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>

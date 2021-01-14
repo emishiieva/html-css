@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;    
+    justify-content: space-between;
+    flex-direction: column;
+    height: 30vh;
+}
+
+header div {    
+    justify-content: space-around;
+    flex-basis: 30%;
+    align-items: stretch;
+}
+
+header div:first-child {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.header-img-1 {
+    flex-basis: 5%;
+    width: 5%;
+    max-width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.header-img-2 {
+    flex-basis: 10%;
+    width: 10%;
+    max-width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-basis: 85%;
+    margin: 0;
+    align-self: flex-end;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+header>div:nth-child(2) {
+    font-family: FreeMono;
+    font-size: 48px;
+    color: red;
+}
+
+header>div:last-child {    
+    font-family: FreeMono;
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;    
+    padding: 0 0 15px 0;
+}
+
+a::before {
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: "";
+}
+
+li:nth-child(1) > a::before {
+    background-image: url("magnifying-glass.png");
+}
+
+li:nth-child(2) > a::before {
+    background-image: url("landscape.png");
+}
+
+li:nth-child(3) > a::before {
+    background-image: url("youtube.png");
+}
+
+li:nth-child(4) > a::before {
+    background-image: url("newspaper.png");
+}
+
+li:nth-child(5) > a::before {
+    background-image: url("price-tag.png");
+}
+
+li:nth-child(6) > a::before {
+    background-image: url("more.png");
+}
+
+body {    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body>*,main>* {
+    border: 1.5px solid yellow;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+
+.left-sidebar {
+    flex: 1 1 30%;
+    background-color: #729FCF;
+    text-align: justify;
+    color: white;
+    font-size: 14px;
+    padding: 1em;
+    font-family: "Liberation Serif";
+    text-indent: 5%;
+    word-spacing: 0.7em;
+}
+
+.text-1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.text-2 {
+    background-color: green;
+    color: white;
+}
+
+.text-3 {
+    color: red;
+}
+
+.text-4 {
+    color: white;
+    background-color: darkgoldenrod;
+    text-decoration: line-through;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.right-sidebar {
+    flex: 1 1 30%;
+    background-color: rgb(240, 228, 206);
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.right-sidebar li {
+    list-style: none;
+}
+
+.right-sidebar li::before {
+    white-space: pre;
+    font-size: x-small;
+    content: "\03C7         ";
+}
+
+.right-sidebar>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.center-part {
+    flex: 1 1 30%;
+    background-color: rgb(62, 126, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.center-part>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+footer img {    
+    width: 30%;
+    max-width: 100%;
+    height: 70%;
+    max-height: 100%;
+    margin: 5px 10px;
+}
+
+footer div{
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 60%;
+    height: 75%;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+footer div p:last-child {
+    align-self: flex-end;
+}
