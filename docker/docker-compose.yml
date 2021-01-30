@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+  web:
+    image: httpd:2.4
+    build: .
+
+    ports:
+      - 8080:80
+    
+    volumes:
+    - "./docs:/usr/local/apache2/htdocs"
+
+  database: 
+    image: redis
